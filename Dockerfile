@@ -1,6 +1,6 @@
 # Stage 1
 
-FROM node:18 as builder
+FROM node:20 as builder
 
 WORKDIR /build
 
@@ -16,7 +16,7 @@ RUN npm run build
 
 # Stage 2
 
-FROM node:18 as runner
+FROM node:20 as runner
 
 WORKDIR /app
 
