@@ -5,10 +5,10 @@ FROM node:20 as builder
 WORKDIR /build
 
 COPY package*.json .
-RUN npm install -g npm@11.6.0
+RUN npm install
 
 COPY src/ src/
-COPY tsconfig.json tsconfig.json
+COPY tsconfig.json
 
 RUN npm run build
 
