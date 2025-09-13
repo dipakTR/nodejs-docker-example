@@ -5,7 +5,7 @@ FROM node:18 as builder
 WORKDIR /build
 
 COPY package*.json .
-RUN npm install
+RUN npm install -g npm@11.6.0
 
 COPY src/ src/
 COPY tsconfig.json tsconfig.json
