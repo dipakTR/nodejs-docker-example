@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node dist/index",
-    "build": "tsc -p ."
+    "build": "npx tsc -p ."
   },
   "author": "",
   "license": "ISC",
